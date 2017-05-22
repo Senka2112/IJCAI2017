@@ -19,7 +19,7 @@ sudo apt-get install mongodb
 sudo apt-get install ros-indigo-mongodb-store
 ```
 
-You need the sguirrel-prediction repository (https://github.com/squirrel-project/squirrel_prediction) which represents the core method for predicting missing values in a multigraph.
+You also need the sguirrel-prediction repository (https://github.com/squirrel-project/squirrel_prediction) which represents the core method for predicting missing values in the planning state.
 
 Planning domains
 ============
