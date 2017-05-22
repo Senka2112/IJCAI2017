@@ -26,7 +26,7 @@ Planning domains
 
 
 
-Runing the tests scripst
+Runing the tests scripts
 ========================
 
 
