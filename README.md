@@ -32,5 +32,5 @@ Runing the tests scripts
 
 Additional info
 ===============
-The version of the MMMVR framewrok which does not recquire ROS can be found at https://iis.uibk.ac.at/software/mmr_mmmvr
+The version of the MMMVR framewrok which does not require ROS can be found at https://iis.uibk.ac.at/software/mmr_mmmvr
 
