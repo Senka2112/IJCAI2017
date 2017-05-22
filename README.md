@@ -20,3 +20,17 @@ sudo apt-get install ros-indigo-mongodb-store
 ```
 
 You need the sguirrel-prediction repository (https://github.com/squirrel-project/squirrel_prediction) which represents the core method for predicting missing values in a multigraph.
+
+Planning domains
+============
+
+
+
+Runing the tests scripst
+========================
+
+
+Additional info
+===============
+The version of the MMMVR framewrok which does not recquire ROS can be found at https://iis.uibk.ac.at/software/mmr_mmmvr
+
