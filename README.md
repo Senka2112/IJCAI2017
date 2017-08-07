@@ -33,7 +33,7 @@ Planning domains
  
  These domains are contained in this repository under [domains_accuracy](https://github.com/Senka2112/IJCAI2017/tree/master/domains_accuracy)
 
-Problems defined in 'tidy-room' domain used for evaluation with conditional planning are given under [domain_problem_complexity](https://github.com/Senka2112/IJCAI2017/tree/master/domain_problem_complexity)
+Problems defined for evaluation with conditional planning are given under [domain_problem_complexity](https://github.com/Senka2112/IJCAI2017/tree/master/domain_problem_complexity)
 
 Runing the tests scripts
 ========================
