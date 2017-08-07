@@ -23,6 +23,7 @@ You also need the [squirrel-prediction repository](https://github.com/squirrel-p
 ```
 git clone https://github.com/squirrel-project/squirrel_prediction
 ```
+Additionally  you need to install a repository containing squirrel messages: [squirrel_common](https://github.com/squirrel_project/squirrel_common)
 
 Planning domains
 ============
@@ -38,7 +39,25 @@ Problems defined for evaluation with conditional planning are given under [domai
 Runing the tests scripts
 ========================
 
+You can run the service for predictions as:
+```
+rosrun squirrel_relations_prediction predict_relations_server.py 
+```
 
+Service call for relations prediction:
+
+```
+# input parameters
+string data_path
+string input_file
+string output_file
+int32 number_of_columns
+---
+#output
+bool finished
+```
+Input file should contain the representation of a graph with missing values.  
+First two columns have to contain string IDs of origin adn destination vertices. Rest columns represent the edges. The file has to be in .csv format where columns are separated with commas and rows with a new line.  Empty values mark unknown edges in a graph. '0' marks no edge between vertices and '1' marks existance of the dge between two vertices.
 
 Additional info
 ===============
