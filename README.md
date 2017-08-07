@@ -1,7 +1,7 @@
 # IJCAI2017
 Decreasing Uncertainty in Planning with State Prediction
 
-This repository contains test scripts for the results presented in the paper "Decreasing Uncertainty in Planning with State Prediction" by Senka Krivic, Michael Cashmore, Daniele Magazzeni, Sandor Szdemak and Justus Piater
+This repository contains test scripts for the results presented in the paper ["Decreasing Uncertainty in Planning with State Prediction"](https://www.ijcai.org/proceedings/2017/0282.pdf) by Senka Krivic, Michael Cashmore, Daniele Magazzeni, Sandor Szdemak and Justus Piater
 
 Prerequisities
 ============
@@ -26,7 +26,10 @@ git clone https://github.com/squirrel-project/squirrel_prediction
 
 Planning domains
 ============
-
+- 'tidy-room', inspired by the problem of cleaning a child’s room of project [SQUIRREL](http://www.squirrel-project.eu/)
+- 'courseadvisor', adapted from [Guerin et al.](https://orff.uc3m.es/bitstream/handle/10016/14914/proceedings-WS-IPC2012.pdf?sequence=1)
+- 'mars-rovers', a multi-robot version of the navigation problem of [Cassandra et al.] (http://people.csail.mit.edu/lpk/papers/iros96.ps) 
+- 'persistent-auv', described by [Palomeras et al.] (https://www.springerprofessional.de/en/toward-persistent-autonomous-intervention-in-a-subsea-panel/10930422)
 
 
 Runing the tests scripts
