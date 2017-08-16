@@ -39,7 +39,7 @@ Problems defined for evaluation with conditional planning are given under [domai
 Runing the tests scripts
 ========================
 
-**running only predictions**
+**Running only predictions**
 
 You can run the service for predictions as:
 ```
@@ -63,7 +63,7 @@ First two columns have to contain string IDs of origin adn destination vertices.
 An example fo such file is given in [examples](https://github.com/Senka2112/IJCAI2017/tree/master/examples/known.csv)
 
 
-**running planning and predictions**
+**Running planning and predictions**
 
 GENERATOR:
 
