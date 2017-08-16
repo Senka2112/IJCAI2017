@@ -84,7 +84,7 @@ The run\_experiment and make\_full bash files are used to generate csv files. Th
 
 The scripts:
 - wait for 20 seconds while previous ROSPlan processes are killed
-- start ROSPlan with the correct domain. This is an absolute path to "/home/michael/Desktop" so will need to be changed.
+- start ROSPlan with the correct domain. This is an absolute path to the folder so will need to be changed.
 - wait for 20 secods while ROSPlan starts
 - Loop for 5-80 percent knowledge and 5-100 objects
 - - call the generator script
