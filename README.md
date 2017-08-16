@@ -39,6 +39,8 @@ Problems defined for evaluation with conditional planning are given under [domai
 Runing the tests scripts
 ========================
 
+**Running only predictions**
+
 You can run the service for predictions as:
 ```
 rosrun squirrel_relations_prediction predict_relations_server.py 
@@ -60,6 +62,35 @@ Input file should contain the representation of a graph with missing values.
 First two columns have to contain string IDs of origin adn destination vertices. Rest columns represent the edges. The file has to be in .csv format where columns are separated with commas and rows with a new line.  Empty values mark unknown edges in a graph. '0' marks no edge between vertices and '1' marks existance of the dge between two vertices.
 An example fo such file is given in [examples](https://github.com/Senka2112/IJCAI2017/tree/master/examples/known.csv)
 
+
+**Running planning and predictions**
+
+GENERATOR:
+
+In each domain folder there is the file: generator.bash
+
+The generator script creates a problem instance in the ROSPlan Knowledge Base. The generator script takes two arguments.
+./generator.bash [number of objects] [percent initial knowledge]
+
+The generator scripts requires that:
+- ROSPlan KB is running
+- The /rosplan/domain\_path parameter is set to the correct domain
+The generator script automatically clears the KB before generation.
+
+PREDICTION:
+
+The run\_experiment and make\_full bash files are used to generate csv files. The take on argument.
+./make\_full [domain name]
+
+The scripts:
+- wait for 20 seconds while previous ROSPlan processes are killed
+- start ROSPlan with the correct domain. This is an absolute path to the folder so will need to be changed.
+- wait for 20 secods while ROSPlan starts
+- Loop for 5-80 percent knowledge and 5-100 objects
+- - call the generator script
+- - call the prediction service
+- - save the files as above
+- Kill the ros launch
 
 Additional info
 ===============
